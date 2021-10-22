@@ -25,10 +25,10 @@ public class SautoLit {
 	  static public void main(String[] args) throws IOException {
 
 		   
-			 String line;
-			 BufferedReader br = new BufferedReader(new FileReader("src/act225/monFichier_L2.txt"));       
-		     StringBuffer sb = new StringBuffer();    
-		     ArrayList<String>  lignes= new ArrayList<String> () ;
+	          String line;
+	          BufferedReader br = new BufferedReader(new FileReader("src/act225/monFichier_L2.txt"));       
+		  StringBuffer sb = new StringBuffer();    
+		  ArrayList<String>  lignes= new ArrayList<String> () ;
 
 		     while((line = br.readLine()) != null)
 		     {
@@ -37,14 +37,15 @@ public class SautoLit {
 		        lignes.add(line);
 
 		     }
-		     System.out.println(sb.toString());  	  
-		     Collections.reverse(lignes);
+		     
+		        System.out.println(sb.toString());  	  
+		        Collections.reverse(lignes);
 		     for(int i = 0 ; i < lignes.size(); i++)
 		     {  
 		    	 System.out.println(lignes.get(i));		     	     
 		     }
 		     
-	         for (int i =0 ; i<lignes.size(); i++) {
+	             for (int i =0 ; i<lignes.size(); i++) {
 	        	 
 			     File myObj = new File("src/act225/monFichier_L"+i+".txt");
 			     myObj.createNewFile() ;
