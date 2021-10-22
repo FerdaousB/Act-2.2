@@ -1,0 +1,3 @@
+QCM : 
+1) Des erreurs de compilation;
+2) Des erreurs de compilation;

@@ -15,7 +15,8 @@ public class Main {
 		 try {
 			 
 	           
-			 if (Nb < 30 || Nb > 10) {
+			 if ((Nb < 10) && (Nb > 30)) 
+			 {
 			        throw new Exception(" The value is not in the allowed interval");
 			        
 			 }
