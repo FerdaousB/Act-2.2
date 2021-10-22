@@ -28,6 +28,7 @@ public class CroisementDeuxTextes {
 	        lignes1.add(line);
 
 	     }
+		     
 		     while((line = br1.readLine()) != null)
 		     {
 		        sb.append(line);      
