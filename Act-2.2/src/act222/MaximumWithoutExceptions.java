@@ -11,37 +11,37 @@ public class MaximumWithoutExceptions {
     
 		try {
 		  
-			BufferedReader br = new BufferedReader(new FileReader("src/act222/data.txt"));
-	        // could generate FileNotFoundException (checked)
-	        int max = -1;
-	        String line = br.readLine();
-	        // peut gÈnÈrer IOException
-	        while (line != null) {
-	        int n = Integer.parseInt(line);
-	            // peut gÈnÈrer NumberFormatException
-	            if (n > max) max = n;
-	            line = br.readLine(); 
-	            // peut gÈnÈrer IOException
+	           BufferedReader br = new BufferedReader(new FileReader("src/act222/data.txt"));
+	           // could generate FileNotFoundException (checked)
+	           int max = -1;
+	           String line = br.readLine();
+	           // peut g√©n√©rer IOException
+	           while (line != null) {
+	           int n = Integer.parseInt(line);
+	           // peut g√©n√©rer NumberFormatException
+	           if (n > max) max = n;
+	           line = br.readLine(); 
+	           // peut g√©n√©rer IOException
 	        }
 	        
-	        System.out.println("Maximum = " + max);
+	           System.out.println("Maximum = " + max);
 	    }
 		
 					
 		catch (FileNotFoundException ex) {
-		      System.out.println(" File does not exist");
+		    System.out.println(" File does not exist");
 		     }	
 		
 		catch (IOException e) {
-		       System.out.println("The file cannot be read.");
+		    System.out.println("The file cannot be read.");
 	    }
 		
 		catch (NumberFormatException e) {
-		       System.out.println("The file contain no numeric data .");
+		    System.out.println("The file contain no numeric data .");
 		}
 		
 		catch (Exception e) {
-		       System.out.println(e.getMessage());
+		    System.out.println(e.getMessage());
 		    }
 		
 		}
