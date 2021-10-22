@@ -9,7 +9,7 @@ public class Main {
 
 		int Nb;
 		Scanner sc = new Scanner(System.in);
-        System.out.println(" Saisir un nombre entre 10 et 30 inclus : ");
+                System.out.println(" Saisir un nombre entre 10 et 30 inclus : ");
 		Nb =sc.nextInt();
 		
 		 try {
@@ -22,12 +22,11 @@ public class Main {
 			 }
 			    
 	           
-	        } catch (Exception e) {
+	             } catch (Exception e) {
 	        	
-	            e.printStackTrace();
-	        } 
-	    }
-        
-	}
+	                e.printStackTrace();
+	             } 
+	             }
+}
 
 
